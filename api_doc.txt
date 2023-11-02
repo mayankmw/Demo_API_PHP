@@ -1,0 +1,61 @@
+User Management API
+
+api_url :- http://localhost/ACS_Training/20jun/PHPServerUserAPI.php
+
+case1 : user signup or registration api :-
+
+method : post
+status : signup
+
+data to be attached : status , userDetails
+userDetails : first_name , middle_name , last_name , email , password , mobile , gender
+
+------------------------------------------------------
+
+case2 : user signin or login api :-
+
+method : post
+status : signin
+
+data to be attached : status , userDetails
+userDetails : email , password
+
+------------------------------------------------------
+
+case3 : user fetch :-
+
+method : get
+status : fetch
+
+data to be attached : -
+
+------------------------------------------------------
+
+case4 : user fetch api for specific user & role:-
+
+method : get
+status : fetchOne
+
+data to be attached : -
+userDetails : email , role
+
+
+------------------------------------------------------
+
+case5 : user manage api (active , inactive , delete)
+
+method : post
+status : manageuserstatus
+
+data to be attached :- email , action (active/inactive/delete)
+
+------------------------------------------------------
+
+case5 : user update api 
+
+method : post
+status : update
+
+data to be attached :- set data & condition data
+
+------------------------------------------------------

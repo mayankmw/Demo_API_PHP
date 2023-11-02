@@ -1,0 +1,70 @@
+                                        table : user
+
+user_id  int  primary key  AUTO_INCREMENT,
+first_name varchar(50),
+middle_name varchar(50),
+last_name varchar(50),
+email varchar(50) unique,
+password varchar(10),
+mobile varchar(14),
+alternate_mobile varchar(14),
+address1 varchar(100),
+address2 varchar(100),
+country varchar(20),
+state varchar(20),
+city varchar(20), 
+gender varchar(7),
+prifile_icon_name varchar(100),
+pincode varchar(10), 	    
+status tinyint,
+role varchar(20),
+
+info varchar(50)
+
+
+
+                                       table : course
+
+course_id int primary key AUTO_INCREMENT,
+title varchar(50),
+age_group varchar(50),
+duration_period varchar(50),
+price varchar(20),
+effective_date varchar(50),
+about_course varchar(100),
+course_description varchar(200),
+introduction varchar(200),
+keywords varchar(100),
+course_icon_name varchar(100),
+status tinynt,
+info varchar(50),
+
+
+
+                                     table :module
+                                     
+module_id int primary key AUTO_INCREMENT,
+title varchar(50),
+course_title varchar(50)  FOREIGN KEY,
+details varchar(50),
+number_of_chapters int,
+status tinyint,
+module_icon_name varchar(100),
+
+
+                                    table : materails
+                                    
+material_id int primary key AUTO_INCREMENT,
+course_title varchar(50) FOREIGN KEY,
+module_title varchar(50) ***DOUBT****
+material_title varchar(50),
+material_details varchar(50),
+status tinyint;
+material_icon_name varchar(100),
+
+
+
+
+
+
+
